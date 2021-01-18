@@ -1,2 +1,2 @@
 # Promise
-手撸一个！
+### 手撸一个Promise！

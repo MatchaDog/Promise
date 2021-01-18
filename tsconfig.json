@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "target": "ES2019",
+        "lib": ["es6", "dom"],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "importHelpers": true,
+        "allowJs": true,
+        "esModuleInterop": true,
+        "strict": true,
+        "removeComments": true,
+        "allowSyntheticDefaultImports": true,
+        "declaration": false,
+        "skipLibCheck": true,
+        "noImplicitAny": false,
+        "paths": {
+            "@/*": ["src/*"]
+        }
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "lib", "es", "dist", "**/test"]
+}

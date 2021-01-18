@@ -1,0 +1,36 @@
+{
+    "root": true,
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "plugins": ["react-hooks", "@typescript-eslint", "prettier"],
+    "rules": {
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "@typescript-eslint/no-var-requires": 0,
+        "@typescript-eslint/no-unused-vars": ["off"],
+        "@typescript-eslint/no-empty-interface": "warn",
+        "@typescript-eslint/ban-types": ["warn"],
+        "@typescript-eslint/no-explicit-any": ["off"],
+        "@typescript-eslint/no-empty-function": "warn",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "prettier/prettier": [
+            "warn",
+            {
+                "trailingComma": "all",
+                "tabWidth": 4,
+                "semi": true,
+                "singleQuote": false,
+                "arrowParens": "always",
+                "jsxBracketSameLine": true,
+                "printWidth": 120
+            }
+        ]
+    },
+    "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"]
+}
